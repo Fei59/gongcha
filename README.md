@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="/readme-images/eerstepagina.jpeg" alt="Home pagina van gong cha">
+  <img src="/readme-images/eerstepagina.jpeg" width="375px" alt="Home pagina van gong cha">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="/readme-images/tweedepagina.jpeg" alt="Producten pagina van gong cha">
+  <img src="/readme-images/tweedepagina.jpeg" width="375px" alt="Producten pagina van gong cha">
  
 </details>
 
@@ -57,6 +57,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - De screenreader leest tekst voor die niet op de pagina zichtbaar is.
+  <img src="/readme-images/verstopte-tekst.jpeg" width="375px" alt="De tekst die je nergens op de pagina ziet.">
+  - Ik vond het goed dat er een introductie wordt gegeven wanneer je de website bezoekt met een screenreader. <img src="/readme-images/introductiesite.jpeg" width="375px" alt="Je hoort een introductie van op welk pagina je bevindt via de screenreader.">
+  - Er wordt geen geldige HTML gebruikt.
+  <img src="/readme-images/geldigehtml.jpeg" width="375px" alt="De HTML-checker toont veel errors.">
+  - Niet alle afbeeldingen hebben een beschrijvende alt-tekst en voor decoratieve afbeeldingen wordt geen leeg alt-attribuut toegepast.
+  <img src="/readme-images/alt.jpeg" width="375px" alt="De afbeelding heeft als alt-tekst “Tea 02 1.png”, wat niet beschrijvend is en ook niet leeg is.">
+  - Er wordt geen h1 gebruikt.
+  <img src="/readme-images/geenh1.png" width="375px" alt="De hoofdkop is een span in plaats van een h1.">
+  - Er worden div-elementen gebruikt om lijsten te structureren in plaats van ul,ol,dl.
+  <img src="/readme-images/lijstelement.jpeg" width="375px" alt="De lijst wordt met een div-element bij elkaar gehouden.">
+  - Ze gebruiken button-elementen, maar niet voor alle knoppen.
+  <img src="/readme-images/button.pdf" width="375px" alt="De knop gebruikt een div in plaats van een button.">
+  - De contrastverhouding van de website is voldoende.
+  <img src="/readme-images/contrast.jpeg" width="375px" alt="De contrastverhouding is 6,23, wat voldoet aan de WCAG-richtlijnen">
+  - Er is rekening gehouden met kleurenblindheid; de meeste inhoud blijft goed leesbaar.
+  <img src="/readme-images/kleurenblind.jpeg" width="375px" alt="Zo ziet de website eruit voor kleurenblinde gebruikers.">
+  - De website heeft een unieke titel voor elke pagina.
+  <img src="/readme-images/titel.pdf" width="375px" alt="In deze afbeelding zie je een unieke titel.">
+  - Het attribuut lang wordt toegepast in de website.
+  <img src="/readme-images/lang.pdf" width="375px" alt="In deze afbeelding hebben ze lang=en gebruikt.">
+  - Op deze website wordt een h3-element eerder gebruikt dan een h2-element, wat de hiërarchie van koppen doorbreekt.
+  - De website past zich niet aan de dark/light modus.
+  - Zelfs wanneer de optie “beweging verminderen” is ingeschakeld en geanimeerde afbeeldingen zijn uitgeschakeld, wordt er nog steeds een animatie afgespeeld bij hover over de bubble tea afbeelding.
+  - Ze gebruiken eenvoudige taal om het voor iedereen gemakkelijk leesbaar te maken.
+  - Je zou niet alle content kunnen zien als je met Tab op de website navigeert.
+  - Je zou op de website kunnen inzoomen.
+  - Ze gebruiken het a-element voor links.
 
 </details>
 
@@ -68,13 +96,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="/readme-images/onepage1.pdf" width="375px" alt="Afbeelding van de eerste pagina">
+  <img src="/readme-images/onepage2.pdf" width="375px" alt="Afbeelding van de tweede pagina">
+  <img src="/readme-images/breakdown.pdf" width="375px" alt="Afbeelding van de breakdown-schets die ik heb gemaakt.">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="/readme-images/animatie.pdf" width="375px" alt="Breakdown van een dynamisch deel.">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="/readme-images/hover.pdf" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
