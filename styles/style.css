@@ -1,10 +1,12 @@
 /**************/
 /* CSS REMEDY */
 /**************/
+
+/*
 *, *::after, *::before {
   box-sizing:border-box;  
 }
-
+*/
 
 
 
@@ -15,10 +17,9 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
 	--font: Vidaloka, sans-serif;
 	--fonttwee: Public Sans, sans-serif;
+	--color: #ffffff
 }
 
 
@@ -28,26 +29,133 @@
 /****************/
 /* JOUW STYLING */
 /****************/
+body{
+	background-image: url("../images/eersteachtergrond.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
+/**********/
+/* header */
+/**********/
+header{
+	display: flex;
+	justify-content: space-between;
+}
+
+a img{
+	width: 43.5%;
+	padding: 2.8% 1.9%;
+}
+
+button{
+	background: none;   
+	border: none;    
+	padding-top: 34.2%;
+}
+
+button img{
+	width: 62.1%;
+}
+
+/* https://www.w3schools.com/howto/howto_css_circles.asp */
+.dot{
+	width: 28px;
+	height: 28px; /* kan niet relatief */
+	background-color: #ffffff;
+	border-radius: 50%;
+
+	display: flex;
+  	justify-content: center; 
+  	align-items: center; 
+}
+
+
+
+
+
+/********/
+/* main */
+/********/
+
 h1 {
 	font-family: var(--font);
 	font-size: 294%;
-	font-weight: 400;
 	line-height: 120%;
+	color: var(--color);
+	font-weight: 100;
+
 	display: grid;
 	place-content:center;
 	text-align:center;
 	grid-template-columns: 70%;
+	padding-top: 3%;
 }
 
 p {
 	font-family: var(--fonttwee);
     line-height: 150%;
-	font-weight: 400;
+	color: var(--color);
+	font-weight: 200;
+	font-size: 101.25%;
+
 	display: grid;
 	grid-template-columns: 85%;
 	place-content:center;
 	text-align:center;
+
+	/*****************************************************/
+	/* Hoe doe je dit in een semantisch correcte manier? */
+	margin-top: -1em;
+	/*****************************************************/
+
+	padding-bottom: 1.7em;
 }
 
-/* jouw code */
+/***************************************/
+/* Hoe zet ik een button in een button */
+/* https://chatgpt.com/share/68c05005-3e78-800d-921c-77b8c6f1f94b */
+.blok{
+	text-align: center;
+	transition: all 0.3s ease;
+}
 
+.blok a:first-child{
+	text-decoration: none;
+	padding: 2.5% 5%;
+	background-color: #ffffff;
+	color: black;
+	width: 10em;
+	font-weight: 300;
+	font-family: var(--fonttwee);
+
+	border-radius: 25px;
+
+	cursor: pointer;
+}
+
+.blok a:last-child{
+	background-color: #ffffff;
+	padding: 2.5% 4.99%;
+	border-radius: 25px;
+}
+
+.blok:hover a:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.blok:hover a:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/***************************************/
+
+/******************************/
+/* Hoe doe ik de witte pagina */
+/******************************/

@@ -118,7 +118,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het opzetten van het document en het maken van de header ging goed. Alleen wist ik niet waarom de inspector in Google Chrome mijn achtergrondafbeelding niet als een afbeelding herkende. Daarom vroeg ik het aan de docent. Het probleem bleek te liggen aan het feit dat ik geen directe verbinding had gemaakt in mijn CSS. Ik had 
+  /images/eersteachtergrond.png gebruikt, maar Google kon dit niet lezen; je moest het verbinden als ../images/eersteachtergrond.png. 
+  
+  Daarna had ik nog drie vragen, tenzij ik aan mijn website ging werken:
+  1. Hoe kan ik margin-top: -1em; op een semantisch correcte manier toepassen?
+  2. Hoe kan ik een knop in een knop plaatsen? <img src="/readme-images/buttoninbutton.pdf" width="375px" alt="In deze afbeelding zie je een knop in een knop">
+  3. Wat is de beste manier om de overgang naar een witte pagina te maken? <img src="/readme-images/wittepagina.pdf" width="375px" alt="In deze afbeelding zie je een overgang van een achtergrond met kleur naar een witte pagina">
 
 
   ### Agenda voor meeting
