@@ -69,13 +69,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="/readme-images/alt.jpeg" width="375px" alt="De afbeelding heeft als alt-tekst “Tea 02 1.png”, wat niet beschrijvend is en ook niet leeg is.">
 
   - Er wordt geen h1 gebruikt.
-  <img src="/readme-images/geenh1.png" width="375px" alt="De hoofdkop is een span in plaats van een h1.">
-
-  - Er worden div-elementen gebruikt om lijsten te structureren in plaats van ul,ol,dl.
-  <img src="/readme-images/lijstelement.jpeg" width="375px" alt="De lijst wordt met een div-element bij elkaar gehouden.">
-
-  - Ze gebruiken button-elementen, maar niet voor alle knoppen.
-  <img src="/readme-images/button.pdf" width="375px" alt="De knop gebruikt een div in plaats van een button.">
+  <img src="/readme-images/geenh1.jpeg" width="375px" alt="De hoofdkop is een span in plaats van een h1.">
 
   - De contrastverhouding van de website is voldoende.
   <img src="/readme-images/contrast.jpeg" width="375px" alt="De contrastverhouding is 6,23, wat voldoet aan de WCAG-richtlijnen">
@@ -83,11 +77,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Er is rekening gehouden met kleurenblindheid; de meeste inhoud blijft goed leesbaar.
   <img src="/readme-images/kleurenblind.jpeg" width="375px" alt="Zo ziet de website eruit voor kleurenblinde gebruikers.">
 
+  - Er worden div-elementen gebruikt om lijsten te structureren in plaats van ul,ol,dl.
+
+  - Ze gebruiken button-elementen, maar niet voor alle knoppen.
+
   - De website heeft een unieke titel voor elke pagina.
-  <img src="/readme-images/titel.pdf" width="375px" alt="In deze afbeelding zie je een unieke titel.">
 
   - Het attribuut lang wordt toegepast in de website.
-  <img src="/readme-images/lang.pdf" width="375px" alt="In deze afbeelding hebben ze lang=en gebruikt.">
 
   - Op deze website wordt een h3-element eerder gebruikt dan een h2-element, wat de hiërarchie van koppen doorbreekt.
 
@@ -100,7 +96,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Je zou niet alle content kunnen zien als je met Tab op de website navigeert.
 
   - Je zou op de website kunnen inzoomen.
-  
+
   - Ze gebruiken het a-element voor links.
 
 </details>
@@ -113,15 +109,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="/readme-images/onepage1.pdf" width="375px" alt="Afbeelding van de eerste pagina">
-  <img src="/readme-images/onepage2.pdf" width="375px" alt="Afbeelding van de tweede pagina">
-  <img src="/readme-images/breakdown.pdf" width="375px" alt="Afbeelding van de breakdown-schets die ik heb gemaakt.">
+  <img src="/readme-images/breakdown.jpg" width="375px" alt="Afbeelding van de breakdown-schets die ik heb gemaakt.">
 
   ### dynamisch deel (bijv menu): 
-  <img src="/readme-images/animatie.pdf" width="375px" alt="Breakdown van een dynamisch deel.">
+  <img src="/readme-images/animatie.jpg" width="375px" alt="Breakdown van een dynamisch deel.">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="/readme-images/hover.pdf" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="/readme-images/hover.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -140,8 +134,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Daarna had ik nog drie vragen, tenzij ik aan mijn website ging werken:
   1. Hoe kan ik margin-top: -1em; op een semantisch correcte manier toepassen?
-  2. Hoe kan ik een knop in een knop plaatsen? <img src="/readme-images/buttoninbutton.pdf" width="375px" alt="In deze afbeelding zie je een knop in een knop">
-  3. Wat is de beste manier om de overgang naar een witte pagina te maken? <img src="/readme-images/wittepagina.pdf" width="375px" alt="In deze afbeelding zie je een overgang van een achtergrond met kleur naar een witte pagina">
+  2. Hoe kan ik een knop in een knop plaatsen? <img src="/readme-images/buttoninbutton.jpeg" width="375px" alt="In deze afbeelding zie je een knop in een knop">
+  3. Wat is de beste manier om de overgang naar een witte pagina te maken? <img src="/readme-images/wittepagina.jpeg" width="375px" alt="In deze afbeelding zie je een overgang van een achtergrond met kleur naar een witte pagina">
 
 
   ### Agenda voor meeting
