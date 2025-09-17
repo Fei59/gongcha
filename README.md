@@ -134,8 +134,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Daarna had ik nog drie vragen, tenzij ik aan mijn website ging werken:
   1. Hoe kan ik margin-top: -1em; op een semantisch correcte manier toepassen?
-  2. Hoe kan ik een knop in een knop plaatsen? <img src="/readme-images/buttoninbutton.jpeg" width="375px" alt="In deze afbeelding zie je een knop in een knop">
-  3. Wat is de beste manier om de overgang naar een witte pagina te maken? <img src="/readme-images/wittepagina.jpeg" width="375px" alt="In deze afbeelding zie je een overgang van een achtergrond met kleur naar een witte pagina">
+  2. Hoe kan ik een knop in een knop plaatsen? 
+  <img src="/readme-images/buttoninbutton.jpeg" width="375px" alt="In deze afbeelding zie je een knop in een knop">
+  3. Wat is de beste manier om de overgang naar een witte pagina te maken? 
+  <img src="/readme-images/wittepagina.jpeg" width="375px" alt="In deze afbeelding zie je een overgang van een achtergrond met kleur naar een witte pagina">
 
 
   ### Agenda voor meeting
@@ -151,10 +153,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  1. Door margin: 0 en de padding aan te passen, krijg je het gewenste effect zonder -1em te gebruiken. Dit komt doordat de h1 automatisch een margin krijgt.
+  2. Door transition: all 1s ease toe te voegen, komen de blokken vloeiender samen. Je kunt daarnaast de knop verplaatsen door de margin-right toe te passen.
+  3. Door de body wit te maken en de rode achtergrond die je nu hebt als achtergrondafbeelding op een section te plaatsen, kun je de achtergrondafbeelding aanpassen. Daarnaast kun je ook de SVG die op de website wordt gebruikt, als achtergrond toevoegen, zodat je de effect krijg die ze ook hebben.
 
 </details>
 
@@ -168,7 +169,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het maken van het hamburgermenu en de carousel was erg lastig. Ik heb in totaal drie uur geprobeerd om het te maken, maar het lukte niet. Wel is mijn pagina grotendeels af, dus dat is goed.
+  
+  Tijdens het coderen vroeg ik me af waar ik mijn cookies moest plaatsen en of ik de hele cookiepagina ook moest maken.
 
 
   ### Agenda voor meeting
