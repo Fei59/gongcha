@@ -1,29 +1,37 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-
-/*
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
-*/
-
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
+	/* font */
 	--font: Vidaloka, sans-serif;
 	--fonttwo: Public Sans, sans-serif;
+
+	/* color */
 	--color: #ffffff;
 	--colortwo: #C10330;
 	--colorthree: black;
 	--colorfour: #FCF6EC;
-	--colorfive: #F6E4CB
+	--colorfive: #F6E4CB;
+	--colorcookie: #0056a7;
+	--colorcloudbutton: #e0c7e6;
+
+	/* gradient */
+	--gradientbrown: linear-gradient(to bottom, #8c3a1a, #e7cdb4);
+	--gradientgreenwhite: linear-gradient(to bottom, #A1AB52, #FCFCF9);
+	--gradientgreenred: linear-gradient(to bottom, #A0A950, #E59091);
+	--gradientpurple: linear-gradient(to bottom, #A07995, #DEC5E4);
+
+	/* font-size */
+	--fourtysevenpx: 2.95rem;
+	--thirtysixpx: 2.25rem;
+	--sixteenpx: 1rem;
+	--eightteenpx: 1.13rem;
+	--twentyonepx: 1.32rem;
+	--fourteenpx: 0.88rem;
+	--twentysevenpx: 1.7rem;
+	--twelvepx: 0.75rem;
+	--sixtyonepx: 3.82rem;
+	--thirthy: 1.9rem;
 }
 
 
@@ -36,6 +44,8 @@
 body{
 	background-color: var(--color);
 	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
 }
 
 
@@ -44,28 +54,19 @@ body{
 
 /**********/
 /* header */
-/**********/
+/**********/ 
 header{
 	display: flex;
 	justify-content: space-between;
 	background-color: var(--colortwo);
+	z-index: 1001;
 }
 
 header a img{
-	width: 11rem;
-	padding: 7% 7%;
+	width: 42%;
+    padding: 4% 4%;
 }
 
-button{
-	background: none;   
-	border: none; 
-	padding-right: 3.5%; 
-	padding-bottom: 1%;
-}
-
-button svg{
-	width: 70%;
-}
 
 
 
@@ -73,45 +74,197 @@ button svg{
 /********************/
 /* header: page boba*/
 /********************/
-.bobapage header{
+#bobapage header{
 	background-color: var(--color);
+}
+
+#bobapage header a img{
+	width: 74%;
+    padding: 8% 6%;
 }
 
 
 
 
 
-/*******/
-/* Dot */
-/*******/
-/* https://www.w3schools.com/howto/howto_css_circles.asp */
-span{
-	
-	background-color: var(--color);
-	border-radius: 50%;
+/**********************/
+/* gehele hambagamenu */
+/**********************/
+/* https://youtu.be/aNDqzlAKmZc?si=R20nsqqNJyM-8cfa */
+header div{
+	background-color: var(--colortwo);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	right: 100%;
+}
 
+header div ul{
+	padding-left: 0;
+}
+
+header div ul li:nth-of-type(1),
+header div ul li:nth-of-type(2),
+header div ul li:nth-of-type(3),
+header div ul li:nth-of-type(4){
+	list-style: none;
 	display: flex;
-  	justify-content: center; 
-  	align-items: center; 
+	justify-content: center;
 }
 
-header span{
+header div ul li a{
+	text-decoration: none;
+	color: var(--color);
+	font-size: var(--thirthy);
+	font-family: var(--fonttwo);
+	padding-bottom: 11%;
+}
+
+header div ul li:nth-of-type(1) a{
+	padding-top: 8%;
+}
+
+header div.active{
+	right: 0;
+	z-index: 999;
+	top: 8%;
+}
+
+nav{
+	display: flex;
 	width: 28px;
-	height: 28px; /* kan niet relatief */
+    height: 28px;
+	margin-top: 5%;
+	margin-right: 3.5%;
 }
 
-footer span{
-	width: 40px;
+nav svg{
+	width: 100%;
+}
+
+nav>button{
+	border: none;
+	border-radius: 50%;
+}
+
+#bobapage nav>button{
+	background-color: white;
+}
+
+
+
+
+
+/**************************/
+/* Header: de divs voor a */
+/**************************/
+header div li:last-child {
+    display: flex; 
+	justify-content: center;
+}
+
+header div li:last-child a:first-child,
+header div li:last-child a:last-child {
+    display: flex;
+    align-items: center;
+    height: 40px; 
+    cursor: pointer;
+    background-color: var(--color);
+}
+
+header div li:last-child a:first-child {
+    padding: 0 20px; 
+    border-radius: 25px;
+    color: var(--colorthree);
+    font-size: var(--sixteenpx);
+}
+
+header div li:last-child a:last-child {
+    width: 40px;          
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;       
+	margin-left: -0.4em;     
+}
+
+header div li:last-child a:last-child svg {
+    width: 4vw;
+    display: block;   
+	color: black;     
+}
+
+
+
+
+
+/*****************/
+/* Header: icons */
+/*****************/
+header p{
+	color: var(--color);
+	font-family: var(--fonttwo);
+	font-weight: 100;
+	padding-top: 77%;
+	text-align: center;
+}
+
+header div ul:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    gap: 1.8em;
+}
+
+header div ul:nth-of-type(2) li {
+    display: inline-block;
+    margin: 0;
+}
+
+header div ul:nth-of-type(2) img {
+    width: 20px;
+    height: 20px;
+    background-color: var(--colorfive);
+    border-radius: 50%;
+    padding: 50%;
+}
+
+
+
+
+
+/******************/
+/* Header: button */
+/******************/
+header div ul:nth-of-type(2) button{
 	height: 40px;
+	width: 40px;
+	background-color: var(--colortwo);
+	border: 5px solid var(--color);
+	border-radius: 50%;
+	color: var(--color);
 }
 
 
 
 
+/**********/
+/* cookie */
+/**********/
+body>button{
+	background-color: var(--colorcookie);
+	border: none;
+	position: fixed;
+	top: 94%; left: 3%; 
+	border-radius: 50%;
+	padding: 1.1%;
+	transform: none;
+	z-index: 1001;
+}
 
-/*******/
-/* nav */
-/*******/
+body>button img{
+	width: 90%;
+}
 
 
 
@@ -131,7 +284,7 @@ section:nth-of-type(1){
 
 h1 {
 	font-family: var(--font);
-	font-size: 294%;
+	font-size: var(--fourtysevenpx);
 	line-height: 120%;
 	color: var(--color);
 	font-weight: 100;
@@ -147,12 +300,12 @@ h1 {
 section:nth-of-type(1) > svg{
 	width: 44%;
 	fill: var(--color);
-	top: 91%; bottom: 0; left: 0; right: 0;
+	bottom: 0; left: 0; right: 0;
   	margin: auto; 
 	position: absolute;
 }
 
-div svg{
+main div svg{
 	width: 3.7%;
 	color: var(--colorthree);
 }
@@ -164,19 +317,15 @@ div svg{
 /************************/
 /* Section 1: page boba */
 /************************/
-.bobapage section:nth-of-type(1){
+#bobapage section:nth-of-type(1){
 	background-image: url("../images/backgroundtwo.jpg");
 }
 
-.bobapage h1 {
+#bobapage section:nth-of-type(1) h1, #bobapage section:nth-of-type(1) p {
 	color: var(--colorfive);
 }
 
-.bobapage section:nth-of-type(1) p{
-	color: var(--colorfive);
-}
-
-.bobapage section:nth-of-type(1) > svg{
+#bobapage section:nth-of-type(1) > svg{
 	fill: var(--colorfour);
 }
 
@@ -192,21 +341,22 @@ section>p{
     line-height: 150%;
 	
 	font-weight: 200;
-	font-size: 101.25%;
 	padding-bottom: 1.7em;
 
 	place-content:center;
 	text-align:center;
 }
 
-section:nth-of-type(1) p{
+section p{
 	color: var(--color);
+	font-size: var(--sixteenpx);
+
 	display: grid;
 	grid-template-columns: 80%;
 }
 
-section:nth-of-type(2), section:nth-of-type(3) p{
-	font-size: 111%;
+section:nth-of-type(2) p, section:nth-of-type(3)>p{
+	font-size: var(--eightteenpx);
 	color: var(--colorthree);
 
 	display: grid;
@@ -230,7 +380,6 @@ main a:first-child{
 	text-decoration: none;
 	padding: 2.5% 5%;
 	color: var(--colorthree);
-	width: 10em;
 	font-weight: 300;
 	font-family: var(--fonttwo);
 
@@ -242,6 +391,7 @@ main div a:last-child{
 	padding: 2.5% 3%;
 	border-radius: 50%;
 	margin-left: -0.7em;
+	color: var(--color);
 }
 
 main div:hover a:first-child {
@@ -263,8 +413,53 @@ section:nth-of-type(2) div a{
 	color: var(--color);
 }
 
-section:nth-of-type(2) div svg{
+section:nth-of-type(2)>div a:nth-of-type(2) svg{
 	fill: var(--color);
+}
+
+
+
+
+
+/***********/
+/* ^ ahrefs*/
+/***********/
+section:nth-of-type(2)>a{
+	width: 20px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: var(--colortwo);
+	top: 53%;bottom: 0; left: 0; right: 0;
+  	margin: auto; 
+}
+
+footer>a{
+	background-color: var(--color);
+	right: 2%;
+
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+footer>a svg{
+	fill: var(--colortwo);
+	rotate: 180deg;
+	width: 25px;
+	height: 25px;
+	left: 30%;
+	top: 25%;
+	position: relative;
+}
+
+main section:nth-of-type(2)>a svg{
+	fill: var(--color);
+	width: 25px;
+	height: 25px;
+	top: 15%;
+	position: relative;
 }
 
 
@@ -274,31 +469,19 @@ section:nth-of-type(2) div svg{
 /*************/
 /* section 2 */
 /*************/
-main button{
-	background-color: var(--colortwo);
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	position: absolute;
-	top: 50%; bottom: 0; left: 0; right: 0;
-  	margin: auto; 
-}
-
-main button svg{
-	fill: var(--color);
-	margin: 0 auto;
-	display: block;
-}
-
 h2{
 	font-family: var(--font);
-	font-size: 225%;
+	font-size: var(--thirtysixpx);
 	line-height: 120%;
 	color: var(--colortwo);
 	font-weight: 100;
 	padding-top: 20%;
 
 	text-align:center;
+}
+
+section:nth-of-type(2){
+	padding-bottom: 8%;
 }
 
 
@@ -311,6 +494,7 @@ h2{
 section:nth-of-type(2) ul{
 	display:flex;
 	gap:6%;
+	overflow-x: scroll;
 }
 
 section:nth-of-type(2) li{
@@ -318,15 +502,26 @@ section:nth-of-type(2) li{
 }
 
 section:nth-of-type(2) li img{
-	background-color: var(--colortwo);
 	border-radius: 10%;
 	width: 194px;
-	height: 342px;
+	height: 80%;
 }
 
-section:nth-of-type(2) li:nth-of-type(2) img{
-	height: 342px;
-	padding: 0;
+section:nth-of-type(2) ul li:nth-of-type(1) img{
+	background-image: var(--gradientgreenwhite);
+}
+
+section:nth-of-type(2) ul li:nth-of-type(2) img,
+section:nth-of-type(2) ul li:nth-of-type(5) img{
+	background-image: var(--gradientgreenred);
+}
+
+section:nth-of-type(2) ul li:nth-of-type(3) img{
+	background-image: var(--gradientbrown);
+}
+
+section:nth-of-type(2) ul li:nth-of-type(4) img{
+	background-image: var(--gradientpurple);
 }
 
 section:nth-of-type(2) li p{
@@ -343,12 +538,128 @@ section:nth-of-type(2) li p{
 /************************/
 /* section 2: boba page */
 /************************/
-.bobapage section:nth-of-type(2){
+section.sectiontwo{
 	background-color: var(--colorfour);
+	padding-top: 10%;
+	padding-bottom: 20%;
+}
+
+p i{
+	font-size: var(--fourteenpx);
+}
+
+section:nth-of-type(2)>img {
+	width: 95%;
+	object-fit: cover; 
+	aspect-ratio: 1 / 1.57;
+	display: block;
+	margin: 0 auto;
+	border-radius: 25px;
 }
 
 
 
+
+
+/**************************************/
+/* section 2: boba page: our products */
+/**************************************/
+#bobapage section:nth-of-type(2) h2{
+	padding-top: 10%;
+	padding-bottom: 0;
+}
+
+/* https://www.w3schools.com/css/css3_gradients.asp */
+#bobapage section:nth-of-type(2) ul li img{
+    border-radius: 40px;
+    width: 148px;
+    height: 282px;
+	background-image: var(--gradientbrown);
+}
+
+#bobapage section:nth-of-type(2) ul{
+	padding-top: 15%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 0;
+}
+
+#bobapage section:nth-of-type(2) ul p{
+	display: flex;
+	align-items: center;
+	display: grid;
+}
+
+#bobapage section:nth-of-type(2) ul li{
+	width: 148px;
+}
+
+#bobapage section:nth-of-type(2) ul li:nth-of-type(1), 
+.bobapage section:nth-of-type(2) ul li:nth-of-type(2){
+	padding-bottom: 10%;
+}
+
+#bobapage section:nth-of-type(2) ul p{
+	font-size: var(--twentyonepx);
+	display: grid;
+	grid-template-columns: 100%;
+	margin-top: 5%;
+}
+
+
+
+
+
+/********************************/
+/* section 2: boba page: button */
+/********************************/
+#bobapage section:nth-of-type(2) div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+#bobapage section:nth-of-type(2) div button:first-of-type,
+#bobapage section:nth-of-type(2) div button:last-of-type {
+	background-color: var(--colorcloudbutton);
+	border: none;
+	border-radius: 50%;
+	width: 3em;
+	height: 3em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#bobapage section:nth-of-type(2) div button:first-of-type{
+	margin-right: -0.7em;
+}
+
+#bobapage section:nth-of-type(2) div button:last-of-type{
+	margin-left: -0.7em;
+}
+
+#bobapage section:nth-of-type(2) div button:first-of-type svg {
+	transform: rotate(180deg);
+	width: 70%;
+}
+  
+#bobapage section:nth-of-type(2) div button:last-of-type svg {
+	width: 70%;
+}
+  
+#bobapage section:nth-of-type(2) div p {
+	background-color: var(--colorcloudbutton);
+	padding: 1rem 3rem;
+	border-radius: 20px;
+	font-family: var(--fonttwo);
+	font-size: var(--eightteenpx);
+	font-weight: 100;
+	white-space: nowrap;
+}
+  
 
 
 
@@ -363,6 +674,7 @@ section:nth-of-type(3){
 section:nth-of-type(3) ul{
 	display:flex;
 	gap:6%;
+	overflow-x: scroll;
 }
 
 section:nth-of-type(3) li{
@@ -370,7 +682,7 @@ section:nth-of-type(3) li{
 }
 
 /* https://chatgpt.com/share/68ca7c48-791c-800d-8bcc-5056f797bad1 */
-section:nth-of-type(3) li img{
+section:nth-of-type(3) li a img{
 	background-color: var(--colortwo);
 	border-radius: 10%;
 	max-height: 224px;
@@ -379,28 +691,136 @@ section:nth-of-type(3) li img{
 }
 
 h3{
-	font-size: 131%;
+	font-size: var(--twentyonepx);
 	font-family: var(--font);
-
-	display: flex;
 	transform: translateX(10px); 
 }
 
-section:nth-of-type(3) ul p{
-	display: flex;
+section:nth-of-type(3) ul a p{
 	transform: translateX(10px);
-	font-size: 87%;
+	font-size: var(--fourteenpx);
 	line-height: 150%;
+	color: var(--colorthree);
 }
 
 section:nth-of-type(3)>img {
-	height: 85vh;
+	width: 95%;
 	object-fit: cover; 
 	aspect-ratio: 1 / 2;
 	display: block;
 	margin: 0 auto;
-	padding-bottom: 15%;
+	padding: 10% 0%;
 	border-radius: 10%;
+}
+
+
+
+
+
+/************************/
+/* Section 3: boba page */
+/************************/
+#bobapage section:nth-of-type(3){
+	background-color: var(--color);
+}
+
+#bobapage section:nth-of-type(3) h2{
+	margin-top: 0;
+	font-size: var(--twentyonepx);
+	font-family: var(--fonttwo);
+	font-weight: 500;
+}
+
+#bobapage section:nth-of-type(3) h3{
+	font-size: var(--sixtyonepx);
+	text-align: center;
+	font-family: var(--font);
+	color: var(--colortwo);
+	margin: 0;
+	font-weight: 100;
+	transform: none;
+}
+
+
+
+
+
+/****************************/
+/* Section 3: boba page: ol */
+/****************************/
+/* https://chatgpt.com/share/68d11975-f750-800d-9f63-0eb70e78f77a */
+ol{
+	counter-reset: step;
+    list-style: none;
+	padding: 0% 2%;
+	padding-bottom: 25%;
+}
+
+ol>li {
+	counter-increment: step;
+	background-color: var(--colorfour);
+	border-radius: 25px;
+}
+
+ol>li h4::before {
+    content: " " counter(step, decimal-leading-zero);
+	font-size: var(--fourtysevenpx);
+	padding: 3% 5%;
+	color: var(--colortwo);
+	font-family: var(--font);
+	font-weight: 100;
+}
+
+ol>li h4{
+	font-size: var(--eightteenpx);
+	color: var(--colortwo);
+	font-family: var(--fonttwo);
+	display: flex;
+	align-items: center;
+	font-weight: 150;
+}
+
+ol>li p{
+	padding:0% 5%;
+	font-family: var(--fonttwo);
+	font-size: var(--fourteenpx);
+	font-weight: 150;
+	padding-bottom: 7%;
+	color: var(--colorthree);
+}
+
+
+
+
+
+/**********************/
+/* 01, 02, 03, 04, 05 */
+/**********************/
+ol ul:nth-of-type(1) img{
+	width: 80px;
+	background-color: var(--colorfour);
+}
+
+
+ol ul:nth-of-type(1){   
+	padding: 0;
+    margin: 0;
+
+	flex-wrap: wrap;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(2, 20%);
+	grid-auto-rows: auto;
+	column-gap: 13px;  
+    row-gap: 13px;
+}
+
+ol ul:nth-of-type(1) p{
+	font-size: var(--sixteenpx);
+	font-family: var(--font);
+	padding: 0;
+	margin-top: 5px;
+	text-align: center;
 }
 
 
@@ -410,8 +830,11 @@ section:nth-of-type(3)>img {
 /**********/
 /* Footer */
 /**********/
+/* https://chatgpt.com/share/68d199a3-b66c-800d-b308-66458b36ba60 */
 footer{
 	background-color: var(--colortwo);
+	border-top-left-radius: 5%;    
+  	border-top-right-radius: 5%; 
 }
 
 footer>img{
@@ -419,6 +842,7 @@ footer>img{
 	padding: 20% 0%;
 	display: block;
 	margin: 0 auto;
+	padding-bottom: 30%;
 }
 
 footer ul{
@@ -430,7 +854,7 @@ footer ul:nth-of-type(1){
 }
 
 footer ul:nth-of-type(1) a{
-	font-size: 160%;
+	font-size: var(--twentysevenpx);
 	font-family: var(--font);
 	text-decoration: none;
 	color: var(--color);
@@ -441,28 +865,197 @@ footer p{
     line-height: 150%;
 	font-weight: 200;
 	color: var(--color);
-
-	display: grid;
-	grid-template-columns: 80%;
-	justify-content: center;
+	padding-left: 10%;
 }
 
 footer p:nth-of-type(2){
-	font-size: 88%;
+	font-size: var(--twelvepx);
+	padding-bottom: 10%;
 }
 
-footer p, footer ul img{
-	display: grid;
-	grid-template-columns: 80%;
-	justify-content: center;
+
+
+
+
+/****************/
+/* footer icons */
+/****************/
+/* https://www.w3schools.com/howto/howto_css_circles.asp */
+footer ul img{
+	background-color: var(--color);
+	border-radius: 50%;
+	padding: 10%;
 }
 
 footer ul:nth-of-type(2){
 	display: flex;
 	gap: 0.5em;
-	padding-bottom: 10%;
+	padding-bottom: 2%;
+}
+
+footer ul img{
+	width: 20px;
+	height: 20px;
+	padding: 50%;
 }
 
 footer ul:nth-of-type(2) li{
-	text-decoration: none;
+	padding: 0.6em;
 }
+
+
+
+
+
+/************/
+/* iPad Pro */
+/************/
+@media screen and (min-width: 768px) {
+    body > button {
+        padding: 0.5%;
+	}
+
+	/* header */
+	header a img {
+		width: 23%;
+	}
+
+	nav {
+		margin-top: 3%;
+    	margin-right: 2%;
+	}
+
+	/* secion 1 */
+	main a:first-child {
+		padding: 1.5% 3%;
+	}
+
+	main div a:last-child {
+		padding: 1.5% 1.7%;
+	}
+
+	main div svg {
+		width: 2%;
+	}
+
+	section:nth-of-type(1) > svg {
+		width: 25%;
+	}
+
+	/* secion 2 */
+	section:nth-of-type(2)>a {
+		top: 57%;
+	}
+
+	h2 {
+		padding-top: 10%;
+	}
+
+	section:nth-of-type(2) {
+		padding-bottom: 5%;
+	}
+
+	section:nth-of-type(2) ul {
+		gap: 3%;
+	}
+
+	/* secion 3 */
+	section:nth-of-type(3)>img {
+		aspect-ratio: 1 / 1;
+		border-radius: 20%;
+	}
+
+	/* footer */
+	footer>img {
+		padding: 10% 0%;
+		padding-bottom: 18%;
+	}
+
+	footer ul:nth-of-type(1) {
+		padding-bottom: 17%;
+	}
+
+	footer p {
+		padding-left: 5%;
+	}
+
+	footer ul:nth-of-type(2) {
+		padding-left: 4%;
+	}
+
+	footer p:nth-of-type(2) {
+		padding-bottom: 5%;
+		width: 54%;
+	}
+
+	/* bobapage: section 2 */
+	#bobapage section:nth-of-type(2) h2 {
+		padding-top: 3%;
+	}
+
+	#bobapage section:nth-of-type(2) ul {
+		padding-top: 3%;
+	}
+
+	#bobapage section:nth-of-type(2) ul {
+		padding: 0;
+		display: grid;
+    	justify-content: center;
+    	grid-template-columns: repeat(2, 20%);
+		row-gap: 45px;
+    	padding: 3% 0%;
+	}
+
+	#bobapage section:nth-of-type(2)>img {
+		width: 80%;
+		aspect-ratio: 1 / 1;
+	}
+
+	#bobapage section:nth-of-type(2) {
+        padding-bottom: 10%;
+    }
+
+	section:nth-of-type(2) p, section:nth-of-type(3)>p {
+		grid-template-columns: 75%;
+	}
+}
+
+
+
+
+@media (min-width: 1024px) {
+	header {
+	  align-items: center;
+	  padding: 0 2rem;
+	}
+  
+	nav {
+	  width: auto;
+	  height: auto;
+	  margin: 0;
+	}
+  
+	header div {
+	  position: static;
+	  width: auto;
+	  height: auto;
+	  background: none;
+	  display: flex;
+	  align-items: center;
+	}
+  
+	header div ul {
+	  display: flex;
+	  gap: 2rem;
+	}
+  
+	header div ul li a {
+	  font-size: 1rem;
+	  padding: 0;
+	  color: var(--color);
+	}
+  
+	nav button {
+	  display: none; /* hamburger-menu verbergen */
+	}
+  }

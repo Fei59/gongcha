@@ -172,6 +172,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Het maken van het hamburgermenu en de carousel was erg lastig. Ik heb in totaal drie uur geprobeerd om het te maken, maar het lukte niet. Wel is mijn pagina grotendeels af, dus dat is goed.
   
   Tijdens het coderen vroeg ik me af waar ik mijn cookies moest plaatsen en of ik de hele cookiepagina ook moest maken.
+  <img src="/readme-images/cookie.jpeg" width="375px" alt="In deze afbeelding zie je een cookie">
 
 
   ### Agenda voor meeting
@@ -187,10 +188,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+- Voor de footer heb ik algemeen alleen de afbeelding en wat padding nodig. 
+- Verwijder de <span> (gebruik geen flex of grid daarvoor).
+- Je zou de site responsive kunnen maken met @media in HTML (zie presentatie van 17 september).
+- Plaats de @media-regels onderaan je CSS-bestand.
+- Het zou handig zijn als je de cookies maakt.
+- De knop die van boven naar onder de pagina gaat, is eigenlijk een a-element.
 
 </details>
 
@@ -218,7 +221,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het maken van een responsive ontwerp ging beter dan ik had verwacht. In het begin had ik wel wat problemen, omdat de @media niet werkte. Dat heb ik opgelost door het op te zoeken, uiteindelijk bleek het probleem te zijn dat ik de min-width te hoog had ingesteld. Daarbij moet ik de toegankelijkheidstest nog doen. Als laatste heb ik een vraag: mag ik grid gebruiken op alle elementen?
 
 
   ### Agenda voor meeting
@@ -279,7 +282,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. https://chatgpt.com/share/68d28dda-d214-800d-843d-78c02d5d5675 
   2. bron 2
   3. ...
 
