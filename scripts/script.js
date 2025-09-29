@@ -5,12 +5,9 @@ const offScreenMenu = document.querySelector('header div');
 hamMenu.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
+    // https://chatgpt.com/share/68d5628a-8b94-800d-b43a-915de2df239e
+    document.body.classList.toggle("active");
     
-    if (hamMenu.classList.contains('active')) {
-        document.body.style.overflow = 'hidden';
-    } else {
-        document.body.style.overflow = 'auto'; 
-    }
     
     if (hamMenu.classList.contains('active')) {
         hamMenu.innerHTML = `

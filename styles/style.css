@@ -14,6 +14,8 @@
 	--colorfive: #F6E4CB;
 	--colorcookie: #0056a7;
 	--colorcloudbutton: #e0c7e6;
+	--colorhambagalaptop: rgb(56 47 45);
+	--darkbody: #242424;
 
 	/* gradient */
 	--gradientbrown: linear-gradient(to bottom, #8c3a1a, #e7cdb4);
@@ -63,8 +65,8 @@ header{
 }
 
 header a img{
-	width: 42%;
-    padding: 4% 4%;
+	width: 170px;
+    padding: 8% 8%;
 }
 
 
@@ -145,6 +147,8 @@ nav svg{
 nav>button{
 	border: none;
 	border-radius: 50%;
+	padding: 10%;
+	width: 30px;
 }
 
 #bobapage nav>button{
@@ -168,7 +172,6 @@ header div li:last-child a:last-child {
     display: flex;
     align-items: center;
     height: 40px; 
-    cursor: pointer;
     background-color: var(--color);
 }
 
@@ -184,7 +187,6 @@ header div li:last-child a:last-child {
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    cursor: pointer;
     padding: 0;       
 	margin-left: -0.4em;     
 }
@@ -206,7 +208,7 @@ header p{
 	color: var(--color);
 	font-family: var(--fonttwo);
 	font-weight: 100;
-	padding-top: 77%;
+	padding-top: 73%;
 	text-align: center;
 }
 
@@ -255,9 +257,10 @@ body>button{
 	background-color: var(--colorcookie);
 	border: none;
 	position: fixed;
-	top: 94%; left: 3%; 
+	top: 850px;
+    left: 15px;
 	border-radius: 50%;
-	padding: 1.1%;
+	padding: 5px;
 	transform: none;
 	z-index: 1001;
 }
@@ -311,7 +314,13 @@ main div svg{
 }
 
 
+body.active {
+  overflow: hidden; /* Disable scrolling when menu is active */
+}
 
+body {
+  overflow: auto; /* Default scroll */
+}
 
 
 /************************/
@@ -384,7 +393,6 @@ main a:first-child{
 	font-family: var(--fonttwo);
 
 	border-radius: 25px;
-	cursor: pointer;
 }
 
 main div a:last-child{
@@ -424,14 +432,21 @@ section:nth-of-type(2)>div a:nth-of-type(2) svg{
 /***********/
 /* ^ ahrefs*/
 /***********/
-section:nth-of-type(2)>a{
-	width: 20px;
-	height: 40px;
+section:nth-of-type(1)>a{
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	position: absolute;
 	background-color: var(--colortwo);
-	top: 53%;bottom: 0; left: 0; right: 0;
+	bottom: -5%; left: 0; right: 0;
   	margin: auto; 
+}
+
+main section:nth-of-type(1)>a svg{
+	fill: var(--color);
+	height: 25px;
+	padding-top: 30%;
+    padding-left: 30%;
 }
 
 footer>a{
@@ -451,14 +466,6 @@ footer>a svg{
 	height: 25px;
 	left: 30%;
 	top: 25%;
-	position: relative;
-}
-
-main section:nth-of-type(2)>a svg{
-	fill: var(--color);
-	width: 25px;
-	height: 25px;
-	top: 15%;
 	position: relative;
 }
 
@@ -630,7 +637,6 @@ section:nth-of-type(2)>img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	cursor: pointer;
 }
 
 #bobapage section:nth-of-type(2) div button:first-of-type{
@@ -650,7 +656,7 @@ section:nth-of-type(2)>img {
 	width: 70%;
 }
   
-#bobapage section:nth-of-type(2) div p {
+#bobapage section:nth-of-type(2) div p:first-of-type {
 	background-color: var(--colorcloudbutton);
 	padding: 1rem 3rem;
 	border-radius: 20px;
@@ -658,6 +664,14 @@ section:nth-of-type(2)>img {
 	font-size: var(--eightteenpx);
 	font-weight: 100;
 	white-space: nowrap;
+}
+
+#bobapage section:nth-of-type(2) div p:nth-of-type(2),
+#bobapage section:nth-of-type(2) div p:nth-of-type(3),
+#bobapage section:nth-of-type(2) div p:nth-of-type(4),
+#bobapage section:nth-of-type(2) div p:nth-of-type(5),
+#bobapage section:nth-of-type(2) div p:nth-of-type(6) {
+	display: none;
 }
   
 
@@ -787,6 +801,9 @@ ol>li p{
 	font-weight: 150;
 	padding-bottom: 7%;
 	color: var(--colorthree);
+
+	display: grid;
+	grid-template-columns: 100%;
 }
 
 
@@ -809,9 +826,7 @@ ol ul:nth-of-type(1){
 	flex-wrap: wrap;
 	display: grid;
 	justify-content: center;
-	grid-template-columns: repeat(2, 20%);
-	grid-auto-rows: auto;
-	column-gap: 13px;  
+	grid-template-columns: repeat(2, 18%);
     row-gap: 13px;
 }
 
@@ -821,6 +836,9 @@ ol ul:nth-of-type(1) p{
 	padding: 0;
 	margin-top: 5px;
 	text-align: center;
+
+	display: grid;
+    grid-template-columns: 110%;
 }
 
 
@@ -907,26 +925,32 @@ footer ul:nth-of-type(2) li{
 
 
 
-/************/
-/* iPad Pro */
-/************/
-@media screen and (min-width: 768px) {
-    body > button {
-        padding: 0.5%;
-	}
-
+/**********/
+/* Tablet */
+/**********/
+/* https://chatgpt.com/share/68d59b2d-6944-800d-90e9-36616259ff2e */
+/* https://chatgpt.com/share/68d59d74-7e90-800d-bcb0-bb2182df974f */
+@media screen and (min-width: 768px) and (max-width: 1023px){
 	/* header */
-	header a img {
-		width: 23%;
-	}
-
 	nav {
 		margin-top: 3%;
     	margin-right: 2%;
 	}
 
+	header div li:last-child a:last-child svg {
+		width: 2vw;
+	}
+
+	header div ul li:nth-of-type(1) a {
+		padding-bottom: 7%;
+	}
+
+	header p {
+		padding-top: 20%;
+	}
+
 	/* secion 1 */
-	main a:first-child {
+	main div a:first-child {
 		padding: 1.5% 3%;
 	}
 
@@ -943,10 +967,6 @@ footer ul:nth-of-type(2) li{
 	}
 
 	/* secion 2 */
-	section:nth-of-type(2)>a {
-		top: 57%;
-	}
-
 	h2 {
 		padding-top: 10%;
 	}
@@ -957,6 +977,10 @@ footer ul:nth-of-type(2) li{
 
 	section:nth-of-type(2) ul {
 		gap: 3%;
+	}
+
+	section:nth-of-type(2) li p {
+		grid-template-columns: 100%;
 	}
 
 	/* secion 3 */
@@ -1018,44 +1042,523 @@ footer ul:nth-of-type(2) li{
 	section:nth-of-type(2) p, section:nth-of-type(3)>p {
 		grid-template-columns: 75%;
 	}
+
+	/* bobapage: section 3 */
+	ol ul:nth-of-type(1) {
+		grid-template-columns: repeat(4, 7%);
+	}
+
+	ol ul:nth-of-type(1) p {
+		grid-template-columns: 150%;
+	}
+
+	ol>li p {
+		padding-bottom: 3%;
+	}
 }
 
 
 
 
-@media (min-width: 1024px) {
-	header {
-	  align-items: center;
-	  padding: 0 2rem;
+
+/*********************/
+/* laptop + laptop L */
+/*********************/
+@media screen and (min-width: 1024px){
+	section:nth-of-type(1){
+		background-image: url("../images/laptopbgone.jpeg");
+		height: 45em;
 	}
-  
+
+	#bobapage section:nth-of-type(1) {
+		background-image: url("../images/laptopbgtwo.jpg");
+	}
+
+	/* header */
 	nav {
-	  width: auto;
-	  height: auto;
-	  margin: 0;
+		margin-top: 2.5%;
+		margin-right: 1.5%;
 	}
-  
-	header div {
-	  position: static;
-	  width: auto;
-	  height: auto;
-	  background: none;
-	  display: flex;
-	  align-items: center;
-	}
-  
-	header div ul {
-	  display: flex;
-	  gap: 2rem;
-	}
-  
+
 	header div ul li a {
-	  font-size: 1rem;
-	  padding: 0;
-	  color: var(--color);
+		padding-bottom: 5%;
 	}
-  
-	nav button {
-	  display: none; /* hamburger-menu verbergen */
+
+	header p {
+		padding-top: 24%;
 	}
-  }
+
+	/* secion 1 */
+	h1 {
+		grid-template-columns: 40%;
+		font-size: var(--sixtyonepx);
+	}
+
+	section p {
+		grid-template-columns: 50%;
+		font-size: var(--twentyonepx);
+	}
+
+	main a:first-child {
+		padding: 1% 2%;
+	}
+
+	main div a:last-child {
+		padding: 1% 1.3%;
+	}
+
+	main div svg {
+		width: 1.5%;
+	}
+	
+	section:nth-of-type(1)>a {
+		width: 100px;
+		height: 100px;
+	}
+
+	main section:nth-of-type(1)>a svg {
+		height: 30px;
+		padding-top: 35%;
+    	padding-left: 35%;
+		width: 30%;
+	}
+
+	/* section 2 */
+	section:nth-of-type(2)>p, section:nth-of-type(3)>p {
+		grid-template-columns: 55%;
+	}
+
+	section:nth-of-type(2) ul {
+		padding-bottom: 8%;
+	}
+
+	h2{
+		padding-top: 10%;
+		font-size: var(--fourtysevenpx);
+	}
+
+	section:nth-of-type(2) li img {
+		border-radius: 40px;
+	}
+
+	section:nth-of-type(2) ul {
+		gap: 2%;
+	}
+
+	section:nth-of-type(2) {
+		padding-bottom: 2%;
+	}
+
+	section:nth-of-type(2) li p {
+		grid-template-columns: 100%;
+	}
+
+	/* secion 3 */
+	section:nth-of-type(3) ul {
+		gap: 2%;
+	}
+
+	section:nth-of-type(3) li {
+		width: 70%;
+	}
+
+	h3, section:nth-of-type(3) ul a p {
+		display: grid;
+		grid-template-columns: 90%;
+	}
+
+	section:nth-of-type(3)>img {
+		border-radius: 20%;
+		aspect-ratio: 1 / 0.8;
+	}
+
+	/* footer */
+	footer>img {
+		padding: 10% 0%;
+		width: 40%;
+	}
+
+	footer ul:nth-of-type(1) {
+		padding-bottom: 15%;
+	}
+
+	footer p {
+		font-size: var(--twentyonepx);
+		padding-left: 5%;
+	}
+
+	footer p:nth-of-type(2) {
+		display: grid;
+		grid-template-columns: 40%;
+	}
+
+	/* bobapage: section 1 */
+	#bobapage section:nth-of-type(1) h1, #bobapage section:nth-of-type(1) p{
+		text-align: left;
+		grid-template-columns: 80%;
+		padding-left: 4%;
+	}
+
+	#bobapage section:nth-of-type(1) h1{
+		max-width: 60%;
+	}
+
+	#bobapage section:nth-of-type(1) p{
+		max-width: 55%;
+	}
+
+	/* bobapage: section 2 */	
+	#bobapage section:nth-of-type(3) h2 {
+		padding-top: 7%;
+	}
+
+	#bobapage section:nth-of-type(2) div button:first-of-type, #bobapage section:nth-of-type(2) div button:last-of-type {
+		display: none;
+	}
+
+	#bobapage section:nth-of-type(2) div p:nth-of-type(2),
+	#bobapage section:nth-of-type(2) div p:nth-of-type(3),
+	#bobapage section:nth-of-type(2) div p:nth-of-type(4),
+	#bobapage section:nth-of-type(2) div p:nth-of-type(5),
+	#bobapage section:nth-of-type(2) div p:nth-of-type(6) {
+		display: block;
+		background-color: var(--colorfive);
+    	padding: 1rem 3rem;
+    	border-radius: 20px;
+    	font-family: var(--fonttwo);
+    	font-size: var(--eightteenpx);
+    	font-weight: 100;
+    	white-space: nowrap;
+	}
+
+	#bobapage section:nth-of-type(2) div{
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+		gap: 1%;
+	}
+
+	#bobapage section:nth-of-type(2) ul {
+		padding-top: 5%;
+		gap: 3%;
+	}
+
+	#bobapage section:nth-of-type(2) ul li {
+		width: 190px;
+		height: 300px;
+	}
+
+	#bobapage section:nth-of-type(2) ul li img {
+		height: 400px;
+		width: 194px;
+	}
+
+	section:nth-of-type(2)>img {
+		aspect-ratio: 1 / 0.45;
+	}
+
+	/* bobapage: section 3 */
+	#bobapage section:nth-of-type(3) h3 {
+		grid-template-columns: 100%;
+	}
+
+	ol>li p {
+		font-size: var(--sixteenpx);
+		display: grid;
+		grid-column: 1 / 2;
+	}
+
+	ol li{
+		display: grid;
+		margin-bottom: 2%;
+	}
+	  
+	ol ul:nth-of-type(1) {
+		grid-column: 2 / 2; 
+		grid-template-columns: repeat(4, auto);
+		gap: 15px;
+		padding: 1.5rem;
+        overflow: hidden;
+	}
+
+	ol ul:nth-of-type(1) img {
+		width: 94px;
+	}
+
+	ol {
+		padding-bottom: 8%;
+	}
+
+	#bobapage section:nth-of-type(3) li {
+    	width: 100%;
+    }
+}
+
+
+
+
+
+/************/
+/* laptop L */
+/************/
+@media screen and (min-width: 1439px){
+	/* https://codepen.io/shooft/pen/myepoJo */
+	  nav {
+		margin: 0;
+	  }
+	
+	  header div {
+		position: static;
+		display: flex;
+		gap: 3rem;
+	  }
+	
+	  header div ul li a {
+		font-size: var(--fourteenpx);
+		padding: 10px 0;
+		white-space: nowrap;
+	  }
+	
+	  nav>button {
+		display: none; 
+	  }
+	
+
+	/**********/
+	/* header */
+	/**********/ 
+	header{
+    	align-items: center;
+    	padding: 0 5%;
+    	height: 80px;
+	}
+
+	header > a:first-child {
+    	position: absolute;
+    	left: 40%;
+	}
+
+	header nav div ul:first-of-type {
+    	margin: 0;
+    	align-items: center;
+		display: flex;
+		gap: 2rem;
+	}
+
+	header nav div ul:first-of-type li:last-child a:last-child svg {
+    	height: 16px;
+	}
+
+	header nav div p {
+    	display: none;
+	}
+
+	header nav div ul:nth-of-type(2) {
+    	gap: 0.5rem;
+    	align-items: center;
+	}
+
+
+	header nav div ul:nth-of-type(2) li img {
+    	padding: 8px;
+	}
+
+	header nav div ul:nth-of-type(2) {
+		position: absolute;
+        right: 2%;
+		top: 0.7%;
+	}
+
+	header nav div ul:nth-of-type(2) li:nth-of-type(4){
+		position: absolute;
+		right: 330%;
+	}
+
+	header nav div ul:nth-of-type(1) li:nth-of-type(5){
+		position: absolute;
+        right: 12%;
+	}
+
+	header a img {
+		width: 230px;
+		padding-top: 15%;
+	}
+
+	/* secion 1 */
+	h1 {
+		grid-template-columns: 30%;
+	}
+
+	section p {
+		grid-template-columns: 35%;
+	}
+
+	section:nth-of-type(1) > svg {
+		width: 25%;
+	}
+
+	/* secion 2 */
+	h2 {
+        padding-top: 5%;
+    }
+
+	section:nth-of-type(2)>p, section:nth-of-type(3)>p {
+        grid-template-columns: 40%;
+    }
+
+	section:nth-of-type(2) ul {
+        display: flex;
+        justify-content: center;
+		padding-bottom: 2%;
+    }
+
+	section:nth-of-type(2) li p{
+		font-size: var(--twentyonepx);
+	}
+
+	section:nth-of-type(2) li {
+		width: 14%;
+	}
+
+	/* secion 3 */
+	section:nth-of-type(3) li a img {
+		max-height: 352px;
+	}
+
+	section:nth-of-type(3) ul {
+		gap: 1%;
+	}
+
+	section:nth-of-type(3)>img {
+		aspect-ratio: 1 / 0.55;
+	}
+
+	/* footer */
+	footer>img {
+		width: 45%;
+		padding: 5% 0%;
+	}
+
+	footer ul:nth-of-type(1) {
+		padding-bottom: 10%;
+	}
+
+	footer p {
+		padding-left: 3%;
+	}
+
+	footer p:nth-of-type(2) {
+		padding-bottom: 3%;
+		grid-template-columns: 30%;
+		display: grid;
+	}
+
+	footer>a {
+		width: 100px;
+		height: 100px;
+	}
+	
+	footer>a svg {
+		left: 40%;
+		top: 30%;
+	}
+
+	/* bobapage: header*/
+	#bobapage header div ul:nth-of-type(1) a {
+		color: var(--colorhambagalaptop);
+	}
+
+	#bobapage header div{
+		background-color:var(--color);
+	}
+
+	#bobapage header div li:last-child a:first-child,
+	#bobapage header div li:last-child a:last-child {
+		background-color: var(--colortwo);
+		color: var(--color);
+	}
+
+	#bobapage header div li:last-child a:last-child svg{
+		color: var(--color);
+	}
+
+	#bobapage header a img {
+		width: 100%;
+	}
+
+	/* bobapage: section 1 */
+	#bobapage section:nth-of-type(1) h1{
+		padding-top: 15%;
+	}
+
+	#bobapage section:nth-of-type(1) p {
+        padding-left: 1%;
+    }
+
+	/* bobapage: section 2 */
+	#bobapage section:nth-of-type(2) h2 {
+		padding-top: 0%;
+	}
+
+	#bobapage section:nth-of-type(2) ul {
+		padding-top: 2%;
+	}
+
+	#bobapage section:nth-of-type(2) div{
+		padding: 0% 15%;
+	}
+
+	/* bobapage: section 3 */
+	#bobapage section:nth-of-type(3) h2 {
+		padding-top: 5%;
+	}
+
+	ol {
+		padding: 0% 10%;
+		padding-bottom: 5%;
+	}
+
+	ol ul:nth-of-type(1) img {
+        width: 115px;
+    }
+
+	#bobapage section:nth-of-type(3) ul {
+		gap: 15px;
+	}
+	
+	ol ul:nth-of-type(1) {
+        margin-right: 3em;
+    }
+}
+
+
+
+
+
+/* Dark-light */
+@media (prefers-color-scheme: dark) {
+	body,
+	section:nth-of-type(3),
+	#bobapage section:nth-of-type(2),
+	#bobapage section:nth-of-type(3) {
+		background: var(--darkbody);
+	}
+
+	section:nth-of-type(1) > svg,
+	#bobapage section:nth-of-type(1) > svg {
+        fill: var(--darkbody);
+    }
+
+	section:nth-of-type(2) p, 
+	section:nth-of-type(3)>p,
+	h3,
+	section:nth-of-type(3) ul a p,
+	#bobapage section:nth-of-type(2) div button:first-of-type svg,
+	#bobapage section:nth-of-type(2) div button:last-of-type svg {
+        color: var(--color);
+    }
+
+	#bobapage section:nth-of-type(2) div p {
+		color: var(--colorthree);
+	}
+}

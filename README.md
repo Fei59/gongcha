@@ -221,7 +221,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Het maken van een responsive ontwerp ging beter dan ik had verwacht. In het begin had ik wel wat problemen, omdat de @media niet werkte. Dat heb ik opgelost door het op te zoeken, uiteindelijk bleek het probleem te zijn dat ik de min-width te hoog had ingesteld. Daarbij moet ik de toegankelijkheidstest nog doen. Als laatste heb ik een vraag: mag ik grid gebruiken op alle elementen?
+  Het maken van een responsive ontwerp ging beter dan ik had verwacht. In het begin had ik wel wat problemen, omdat de @media niet werkte. Dat heb ik opgelost door het op te zoeken, uiteindelijk bleek het probleem te zijn dat ik de min-width te hoog had ingesteld. Daarbij moet ik de toegankelijkheidstest nog doen. Als laatste heb ik twee vragen. Mag ik grid gebruiken op alle elementen? Hoe maak ik mijn buttons responsive?
+  <img src="/readme-images/hambagamenu.jpeg" width="375px" alt="In deze afbeelding zie je een platte hambagamenu">
 
 
   ### Agenda voor meeting
@@ -237,10 +238,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - CSS en JavaScript bestanden moeten in de mapjes styles en scripts staan. Bestanden die buiten deze mapjes staan, kunnen worden verwijderd.
+  - De body niet laten scrollen wanneer je het hamburgermenu opent, kun je het beste met CSS doen in plaats van met JavaScript.
+  <img src="readme-images/javascript.jpeg" width="375px" alt="Dit is een afbeelding van de Javascript code">
+  - README: screenshot van de eerste pagina en de tweede pagina moet een screenshot van de hele pagina zijn (dit moet nog aangepast worden). Daarbij hoef toegankelijkheid niet gemaakt te worden.
+  - De rode button zou je responsive kunnen maken door het in section 1 te plaatsen en de styling aanpassen.
+  - De navigatiebutton zou je responsive kunnen maken door de breedte en hoogte instellen op de button, vervolgens padding: 0 toepassen. 
+  - De colums op de bobapage (stap 1 t/m 5) op laptopformaat zou je kunnen fixen met display: flex en daar een beetje mee spelen.
 
 </details>
 
@@ -264,7 +268,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik moest een body niet gescrollt maken d.m.v. css, maar dat lukte niet helemaal dus heb ik wel css ervoor gebruikt, maar ook d.m.v. Javascript.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
