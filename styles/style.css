@@ -314,13 +314,7 @@ main div svg{
 }
 
 
-body.active {
-  overflow: hidden; /* Disable scrolling when menu is active */
-}
 
-body {
-  overflow: auto; /* Default scroll */
-}
 
 
 /************************/

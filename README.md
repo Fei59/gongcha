@@ -258,19 +258,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="/readme-images/uitkomsteen.png" width="375px" alt="In dit afbeelding zie je de uitkomst van bladzijde een.">
+  <img src="/readme-images/uitkomsttwee.png" width="375px" alt="In dit afbeelding zie je de uitkomst van bladzijde twee.">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd hoe grid werkt en het maken van het hamburgermenu ging goed na het bekijken van de video. Met de hulp van de docent, studentassistenten en ChatGPT had me erg ver gebracht bij het maken van de website, want dat ging nog niet zo makkelijk dan gedacht. Het maken van een responsive ontwerp van telefoon naar tablet ging vrij gemakkelijk, maar bij de laptopversie was het lastiger. Veel elementen lagen iets anders, waardoor ik ze allemaal weer moest aanpassen, wat me ongeveer een dag heeft gekost. Ook heb ik geleerd hoe ik een dark-light modus kon maken en hoe ik SVG-bestanden in mijn website kon gebruiken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="/readme-images/darklightmodus.png" width="375px" alt="Dit is een afbeelding van de dark-light modus van de website Gong Cha die ik heb gemaakt.">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Ik moest een body niet gescrollt maken d.m.v. css, maar dat lukte niet helemaal dus heb ik wel css ervoor gebruikt, maar ook d.m.v. Javascript.
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Ik moest de body niet scrollbaar maken met behulp van CSS, maar dat lukte niet helemaal. Daarom heb ik het deels met CSS gedaan en deels met JavaScript. Daarnaast heb ik meerdere keren geprobeerd om een hamburgermenu en een carousel te maken. Het hamburgermenu is gelukt dankzij een video die ik hierover heb bekeken, maar aan de carousel ben ik niet meer toegekomen.
 </details>
 
 
@@ -286,8 +285,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. https://chatgpt.com/share/68d28dda-d214-800d-843d-78c02d5d5675 
-  2. bron 2
-  3. ...
+  1. https://chatgpt.com/share/68d2a36b-5864-800d-9403-9b9dec7d06c7 
+  2. https://chatgpt.com/share/68d28dda-d214-800d-843d-78c02d5d5675
+  3. https://youtu.be/aNDqzlAKmZc?si=R20nsqqNJyM-8cfa
+  4. https://chatgpt.com/share/68c80b3e-bd54-800d-af4b-6dad2cdea6ac
+  5. https://chatgpt.com/share/68c05005-3e78-800d-921c-77b8c6f1f94b
+  6. https://www.w3schools.com/css/css3_gradients.asp
+  7. https://chatgpt.com/share/68ca7c48-791c-800d-8bcc-5056f797bad1
+  8. https://chatgpt.com/share/68d11975-f750-800d-9f63-0eb70e78f77a
+  9. https://chatgpt.com/share/68d199a3-b66c-800d-b308-66458b36ba60
+  10. https://www.w3schools.com/howto/howto_css_circles.asp
+  11. https://chatgpt.com/share/68d59b2d-6944-800d-90e9-36616259ff2e
+  12. https://chatgpt.com/share/68d59d74-7e90-800d-bcb0-bb2182df974f
+  13. https://codepen.io/shooft/pen/myepoJo
+  14. https://chatgpt.com/share/68d2c14c-838c-800d-b8be-0b553716cdd1
+  15. https://chatgpt.com/share/68d5628a-8b94-800d-b43a-915de2df239e
 
 </details>
