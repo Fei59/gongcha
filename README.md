@@ -208,6 +208,41 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - Er is lang attribute gebruikt.
+  <img src="/readme-images/gongchalang.jpeg" width="375px" alt="In deze afbeelding zie je lang = EN.">
+
+  - Op elke pagina wordt een H1 gebruikt.
+  <img src="/readme-images/gonngchaheen.jpeg" width="375px" alt="In deze afbeelding zie je een h1.">
+
+  - Voor de listitems worden list elementen gebruikt.
+  <img src="/readme-images/gongchaol.jpeg" width="375px" alt="In deze afbeelding zie je een lijstitem <ol> met daarbinnen een <ul>.">
+
+  - Alle afbeeldingen hebben een alt-tekst.
+  <img src="/readme-images/gongchaol.jpeg" width="375px" alt="In deze afbeelding zie je meerdere afbeeldingen, elk voorzien van een alt-tekst.">
+
+  - Voor alle links is het <a>-element gebruikt.
+  <img src="/readme-images/gongchaa.jpeg" width="375px" alt="In deze afbeelding is te zien dat alle links een a hebben.">
+
+  - Voor alle knoppen is het <button>-element gebruikt.
+  <img src="/readme-images/gongchabutton.jpeg" width="375px" alt="In deze afbeelding is te zien dat voor een knop het button element wordt gebruikt.">
+
+  - De website ondersteunt dark-light mode.
+  <img src="/readme-images/gongchadarklight.jpeg" width="375px" alt="In deze afbeelding is te zien dat de website dark/light mode ondersteunt.">
+
+  - Het contrast van de <p>-elementen voldoet aan de toegankelijkheidsrichtlijnen.
+  <img src="/readme-images/gongchacontrastp.jpeg" width="375px" alt="In deze afbeelding is te zien dat het contrast van de p elementen voldoet aan de toegankelijkheidsrichtlijnen.">
+
+  -Het contrast van de grote tekst, zoals h1 en h2, voldoet aan de toegankelijkheidsrichtlijnen.
+  <img src="/readme-images/gongchacontrasthtwee.jpeg" width="375px" alt="In deze afbeelding is te zien dat het contrast van de h2 voldoet aan de toegankelijkheidsrichtlijnen.">
+
+  - Er zitten geen errors in de website en het is gevalideerd.
+  - Er is geen unique titel voor elk pagina, wel wordt er een titel gebruikt.
+  - Je zou in kunnen zoomen.
+  - Je zou de website niet kunnen navigaten met de keyboard, omdat het dingen op de achtergrond ook voorleest.
+  - Er is genoeg ruimte tussen de interactieve items om te scrollen.
+  - Je kan niet horizontaal scrollen, behalve bij een carousel.
+  - De heading-elementen staan in een logische volgorde, van H1 naar H2 naar H3.
+
 
 </details>
 
@@ -258,8 +293,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="/readme-images/uitkomsteen.png" width="375px" alt="In dit afbeelding zie je de uitkomst van bladzijde een.">
-  <img src="/readme-images/uitkomsttwee.png" width="375px" alt="In dit afbeelding zie je de uitkomst van bladzijde twee.">
+  <img src="/readme-images/uitkomsteen.jpeg" width="375px" alt="In dit afbeelding zie je de uitkomst van bladzijde een.">
+
+  <img src="/readme-images/uitkomsttwee.jpeg" width="375px" alt="In dit afbeelding zie je de uitkomst van bladzijde twee.">
 
 
   ### Dit ging goed/Heb ik geleerd: 
